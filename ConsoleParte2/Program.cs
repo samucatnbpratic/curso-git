@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ConsoleParte2.Entities.Enums;
+using System;
+using ConsoleParte2.Entities;
+using System.Globalization;
 
 namespace ConsoleParte2
 {
@@ -6,15 +9,59 @@ namespace ConsoleParte2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Client c = new Client();
+            Order order = new Order();
+            Product prod = new Product();
+            OrderItem orderitem = new OrderItem();
 
-            TimeSpan t1 = new TimeSpan(1, 30, 10);
+            Console.WriteLine("Enter cliente data: ");
+            Console.Write("Name: ");
+            c.Name = Console.ReadLine();
+            Console.Write("Email: ");
+            c.Email = Console.ReadLine();
+            Console.Write("Birth date: ");
+            c.BirthDate = DateTime.ParseExact(Console.ReadLine(),"dd/MM/yyyy", CultureInfo.InvariantCulture);
 
-            //aqui fizemos a multiplicação por 2.0 como utilizamos um double, fizemos o cast para poder dar certo.
-            TimeSpan mult = TimeSpan.FromTicks( ((long)((double)t1.Ticks * 2.0)));
-            Console.WriteLine(t1);
-            Console.WriteLine(mult);
-            Console.ReadLine();
+            order.Cliente = c;
+
+            Console.WriteLine("Enter cliente data: ");
+            Console.Write("Status: ");
+            order.Moment = DateTime.Now;
+            order.Status = Enum.Parse<OrderStatus>(Console.ReadLine());
+            Console.Write("How many items to this order: ");
+            int qtd = int.Parse(Console.ReadLine());
+            for (int i = 0; i < qtd; i++)
+            {
+                Console.WriteLine($"Enter #{i} item data: ");
+                Console.Write("Product Name: ");
+                prod.Name = Console.ReadLine();
+                Console.Write("Product Price: ");
+                prod.Price = double.Parse(Console.ReadLine());
+                Console.Write("Product Quantity: ");
+                orderitem.Quantity = int.Parse(Console.ReadLine());
+                orderitem.Produto = prod;
+                order.Itens.Add(orderitem);
+
+            }
+
+
+            Console.WriteLine(order);
+
+            /*
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment
+            };
+            Console.WriteLine(order);
+
+            string txt = OrderStatus.PendingPayment.ToString();
+            Console.WriteLine(txt);
+
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+            Console.WriteLine(os);
+            */
         }
     }
 }
