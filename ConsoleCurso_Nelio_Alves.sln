@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso_Nelio_Alves", "ConsoleCurso_Nelio_Alves\ConsoleCurso_Nelio_Alves.csproj", "{FAB8B5A7-DAB3-421A-9923-831848CB2CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleParte2", "ConsoleParte2\ConsoleParte2.csproj", "{7996660F-6225-469E-A075-68CAF5DD8F06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleParte2", "ConsoleParte2\ConsoleParte2.csproj", "{7996660F-6225-469E-A075-68CAF5DD8F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Curso.Heranca", "Console.Curso.Heranca\Console.Curso.Heranca.csproj", "{FA08577C-3E44-4B38-8BF2-C90CF049FD43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7996660F-6225-469E-A075-68CAF5DD8F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7996660F-6225-469E-A075-68CAF5DD8F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7996660F-6225-469E-A075-68CAF5DD8F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA08577C-3E44-4B38-8BF2-C90CF049FD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA08577C-3E44-4B38-8BF2-C90CF049FD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA08577C-3E44-4B38-8BF2-C90CF049FD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA08577C-3E44-4B38-8BF2-C90CF049FD43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
