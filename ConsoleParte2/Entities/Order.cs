@@ -1,6 +1,7 @@
 ﻿using ConsoleParte2.Entities.Enums;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace ConsoleParte2.Entities
@@ -32,14 +33,16 @@ namespace ConsoleParte2.Entities
             foreach (OrderItem item in Itens)
             {
                 sb.Append(item.Produto.Name);
-                sb.Append(", $");
+                sb.Append(", $ ");
                 sb.Append(item.Price.ToString("F2"));
-                sb.Append("Quantity: ");
+                sb.Append("  Quantity: ");
                 sb.Append(item.Quantity.ToString("F3"));
-                sb.Append("Subtotal: $");
+                sb.Append("  Subtotal: $ ");
                 sb.AppendLine(item.SubTotal().ToString("F2"));
 
             }
+            sb.Append("TOTAL PRICE: $");
+            sb.AppendLine(Total().ToString("F2", CultureInfo.InvariantCulture));
             return sb.ToString();
         }
 

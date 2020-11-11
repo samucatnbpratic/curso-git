@@ -11,8 +11,6 @@ namespace ConsoleParte2
         {
             Client c = new Client();
             Order order = new Order();
-            Product prod = new Product();
-            OrderItem orderitem = new OrderItem();
 
             Console.WriteLine("Enter cliente data: ");
             Console.Write("Name: ");
@@ -30,15 +28,18 @@ namespace ConsoleParte2
             order.Status = Enum.Parse<OrderStatus>(Console.ReadLine());
             Console.Write("How many items to this order: ");
             int qtd = int.Parse(Console.ReadLine());
-            for (int i = 0; i < qtd; i++)
+            for (int i = 1; i <= qtd; i++)
             {
+                OrderItem orderitem = new OrderItem();
+                Product prod = new Product();
                 Console.WriteLine($"Enter #{i} item data: ");
                 Console.Write("Product Name: ");
                 prod.Name = Console.ReadLine();
                 Console.Write("Product Price: ");
-                prod.Price = double.Parse(Console.ReadLine());
+                prod.Price = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
                 Console.Write("Product Quantity: ");
-                orderitem.Quantity = int.Parse(Console.ReadLine());
+                orderitem.Quantity = int.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+                orderitem.Price = prod.Price;
                 orderitem.Produto = prod;
                 order.Itens.Add(orderitem);
 
