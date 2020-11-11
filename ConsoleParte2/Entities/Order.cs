@@ -46,6 +46,7 @@ namespace ConsoleParte2.Entities
             return sb.ToString();
         }
 
+
         public void AddItem(OrderItem item)
         {
             Itens.Add(item);
