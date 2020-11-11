@@ -62,6 +62,10 @@ namespace ConsoleCurso_Nelio_Alves
             var tick_t2 = t2.Ticks;
             TimeSpan mult = TimeSpan.FromTicks(tick_t2 * 2);
             Console.WriteLine(mult);
+
+            var tick_t3 = t2.Ticks;
+            TimeSpan div = TimeSpan.FromTicks(tick_t2 / 2);
+            Console.WriteLine(div);
         }
 
         private static void Datetime_Propriedades_aula_91()
