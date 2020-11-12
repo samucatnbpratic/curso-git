@@ -25,5 +25,12 @@ namespace ConsoleCurso.Heranca.Entities
         {
             Balance += Balance * InterestRate;
         }
+        //aqui pra exemplo estamos usando sealed -  para selar o metodo e não permtir que ele seja sobreposto
+        // selar é necessario para segurança e performace.
+        public sealed override void Withdraw(double amount)
+        {
+            base.Withdraw(amount);
+            Balance -= 2.0;
+        }
     }
 }
