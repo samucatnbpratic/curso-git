@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso_Nelio_Alves", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleParte2", "ConsoleParte2\ConsoleParte2.csproj", "{7996660F-6225-469E-A075-68CAF5DD8F06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Curso.Heranca", "Console.Curso.Heranca\Console.Curso.Heranca.csproj", "{FA08577C-3E44-4B38-8BF2-C90CF049FD43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.Heranca", "Console.Curso.Heranca\ConsoleCurso.Heranca.csproj", "{FA08577C-3E44-4B38-8BF2-C90CF049FD43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

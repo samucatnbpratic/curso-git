@@ -1,5 +1,5 @@
 ﻿
-namespace Console.Curso.Heranca.Entities
+namespace ConsoleCurso.Heranca.Entities
 {
     class BusinessAccount : Account
     {
@@ -17,10 +17,16 @@ namespace Console.Curso.Heranca.Entities
             LoanLimit = loanlimit;
         }
 
-        public void Loan(double amount)
+        public bool Loan(double amount)
         {
             if (amount <= LoanLimit)
+            {
                 Balance += amount;
+                Balance += amount;
+                return true;
+            }
+            else
+                return false;
         }
     }
 }
