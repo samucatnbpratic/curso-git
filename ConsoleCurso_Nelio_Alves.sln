@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleParte2", "ConsolePar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.Heranca", "Console.Curso.Heranca\ConsoleCurso.Heranca.csproj", "{FA08577C-3E44-4B38-8BF2-C90CF049FD43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso.SisEmployee", "ConsoleCurso.Employee\ConsoleCurso.SisEmployee.csproj", "{9FE5EAB5-9706-4CA5-8A8E-7621968AB1D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.SisEmployee", "ConsoleCurso.Employee\ConsoleCurso.SisEmployee.csproj", "{9FE5EAB5-9706-4CA5-8A8E-7621968AB1D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso.ExercicioHP", "ConsoleCurso.ExercicioHP\ConsoleCurso.ExercicioHP.csproj", "{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9FE5EAB5-9706-4CA5-8A8E-7621968AB1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE5EAB5-9706-4CA5-8A8E-7621968AB1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE5EAB5-9706-4CA5-8A8E-7621968AB1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
