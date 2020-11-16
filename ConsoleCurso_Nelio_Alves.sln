@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.SisEmployee", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.ExercicioHP", "ConsoleCurso.ExercicioHP\ConsoleCurso.ExercicioHP.csproj", "{FCE5EEDF-E776-4CD3-AADB-4B3BA2C82C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso.ExercicioAbstract", "ConsoleCurso.ExercicioAbstract\ConsoleCurso.ExercicioAbstract.csproj", "{AAD9C304-9F21-42FC-A105-37D3E61403DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCurso.ExercicioAbstract", "ConsoleCurso.ExercicioAbstract\ConsoleCurso.ExercicioAbstract.csproj", "{AAD9C304-9F21-42FC-A105-37D3E61403DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCurso.AbstratoContribuinte", "ConsoleCurso.AbstratoContribuinte\ConsoleCurso.AbstratoContribuinte.csproj", "{66F4BC84-E485-4C8E-A6F9-57F7B11FBCFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AAD9C304-9F21-42FC-A105-37D3E61403DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD9C304-9F21-42FC-A105-37D3E61403DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD9C304-9F21-42FC-A105-37D3E61403DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F4BC84-E485-4C8E-A6F9-57F7B11FBCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F4BC84-E485-4C8E-A6F9-57F7B11FBCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F4BC84-E485-4C8E-A6F9-57F7B11FBCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F4BC84-E485-4C8E-A6F9-57F7B11FBCFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
