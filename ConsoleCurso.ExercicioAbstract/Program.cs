@@ -54,7 +54,7 @@ namespace ConsoleCurso.ExercicioAbstract
             try
             {
 
-                List<Shape> figura = new List<Shape>();
+                List<IShape> figura = new List<IShape>();
 
                 Console.Write("Enter the number of shapes: ");
                 int n = int.Parse(Console.ReadLine());
@@ -82,7 +82,7 @@ namespace ConsoleCurso.ExercicioAbstract
                     }
                 }
                 Console.WriteLine("SHAPE AREAS: ");
-                foreach (Shape item in figura)
+                foreach (IShape item in figura)
                 {
                     Console.WriteLine(item.Area());
 

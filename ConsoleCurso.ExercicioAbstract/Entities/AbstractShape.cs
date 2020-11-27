@@ -2,16 +2,17 @@
 
 namespace ConsoleCurso.ExercicioAbstract.Entities
 {
-    abstract class Shape
+    abstract class AbstractShape : IShape
     {
         public Color Color { get; set; }
 
-
-        public Shape(Color color)
+        protected AbstractShape(Color color)
         {
             Color = color;
         }
 
         public abstract double Area();
+
+
     }
 }
