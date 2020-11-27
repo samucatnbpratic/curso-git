@@ -8,7 +8,7 @@ namespace ConsoleVeiculo.Services
         public double PricePerHour { get; private set; }
         public double PricePerDay { get; private set; }
 
-        //aqui primeiro exemplo ficava muito acoplado
+        //aqui primeiro exemplo ficava muito acoplado, não é correto
         // private BrazilTaxService brazilTaxService = new BrazilTaxService();
 
         //vamos atraves da interface criar a inversão de controle por meio de injeção de dependencia
