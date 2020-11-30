@@ -4,14 +4,12 @@ using System.Text;
 
 namespace ConsoleGenericParte1
 {
-    class PrintService
+    class PrintService<T>
     {
-        //NÃO TEM type safety - não é a solução ideal. (não se deve usar o object)
-        //compilador não pega erros ocorrendo somente em tempo de execução
-        private object[] values = new object[10];
+        private T[] values = new T[10];
         private int count = 0;
 
-        public void AddValue(object value)
+        public void AddValue(T value)
         {
             if (count == 10)
             {
@@ -21,7 +19,7 @@ namespace ConsoleGenericParte1
             count++;
         }
 
-        public object First()
+        public T First()
         {
             if (count == 0)
             {
