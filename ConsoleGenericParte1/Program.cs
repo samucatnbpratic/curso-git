@@ -6,7 +6,7 @@ namespace ConsoleGenericParte1
     {
         static void Main(string[] args)
         {
-            PrintService p = new PrintService();
+            PrintService<int> p = new PrintService<int>();
 
             Console.Write("How many values ? ");
             int n = int.Parse(Console.ReadLine());
