@@ -12,6 +12,7 @@ namespace ConsoleHashSet
             set.Add("TV");
             set.Add("Notebook");
             set.Add("Tablet");
+            set.Add("Bike");
 
             Console.WriteLine(set.Contains("Computer"));
 
