@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExercInstrutor", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDictionary", "ConsoleDictionary\ConsoleDictionary.csproj", "{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExercVotacao", "ConsoleExercVotacao\ConsoleExercVotacao.csproj", "{0817E3A2-620B-42DF-8418-863198DA135C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0817E3A2-620B-42DF-8418-863198DA135C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0817E3A2-620B-42DF-8418-863198DA135C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0817E3A2-620B-42DF-8418-863198DA135C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0817E3A2-620B-42DF-8418-863198DA135C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
