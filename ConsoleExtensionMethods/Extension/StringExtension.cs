@@ -1,6 +1,7 @@
 ﻿
 using ConsoleExtensionMethods;
 
+//obs importante, o nome do namespace apontamos para System o mesmo do objeto assim não precisamos ficar usando o using  
 namespace System
 {
     static class StringExtension
