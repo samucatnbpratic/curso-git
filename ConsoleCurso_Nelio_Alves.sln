@@ -33,15 +33,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleEquals", "ConsoleEqu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHashSet", "ConsoleHashSet\ConsoleHashSet.csproj", "{F563920A-EF09-4D4E-BF66-000B137A20B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSortedSet", "ConsoleSortedSet\ConsoleSortedSet.csproj", "{38916197-5BBC-4B52-AA2F-4B171FCC5835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleSortedSet", "ConsoleSortedSet\ConsoleSortedSet.csproj", "{38916197-5BBC-4B52-AA2F-4B171FCC5835}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLerArqLog", "ConsoleLerArqLog\ConsoleLerArqLog.csproj", "{4DA2FE67-2617-46DE-87B0-2F09569556D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLerArqLog", "ConsoleLerArqLog\ConsoleLerArqLog.csproj", "{4DA2FE67-2617-46DE-87B0-2F09569556D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExercInstrutor", "ConsoleExercInstrutor\ConsoleExercInstrutor.csproj", "{5CA5A549-BCA8-4EAD-B763-5F4A37611633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExercInstrutor", "ConsoleExercInstrutor\ConsoleExercInstrutor.csproj", "{5CA5A549-BCA8-4EAD-B763-5F4A37611633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDictionary", "ConsoleDictionary\ConsoleDictionary.csproj", "{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDictionary", "ConsoleDictionary\ConsoleDictionary.csproj", "{DF6B98F7-F7CA-4C22-B3DE-4A7B5EF624D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExercVotacao", "ConsoleExercVotacao\ConsoleExercVotacao.csproj", "{0817E3A2-620B-42DF-8418-863198DA135C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExercVotacao", "ConsoleExercVotacao\ConsoleExercVotacao.csproj", "{0817E3A2-620B-42DF-8418-863198DA135C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExtensionMethods", "ConsoleExtensionMethods\ConsoleExtensionMethods.csproj", "{0865A6AB-123A-45AF-8D04-EE59F7C1716C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{0817E3A2-620B-42DF-8418-863198DA135C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0817E3A2-620B-42DF-8418-863198DA135C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0817E3A2-620B-42DF-8418-863198DA135C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0865A6AB-123A-45AF-8D04-EE59F7C1716C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0865A6AB-123A-45AF-8D04-EE59F7C1716C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0865A6AB-123A-45AF-8D04-EE59F7C1716C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0865A6AB-123A-45AF-8D04-EE59F7C1716C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
