@@ -12,6 +12,11 @@ namespace ConsoleFile
             //File - classe estatica porém existe uma verificação de segurança o que torna mais demorada que FileInfo
             //FileInfo - deve ser instanciada e não tem a verificação de segurança.
 
+            //observação importante:
+            //Directory - classe estatica e com validação de segurança o que torna mais custosa
+            //DirectoryInfo - classe não estática e sem validação de segurança tornando mais rapdia
+
+
             // PrimeiroExemplo();
 
             SegundoExemplo();
@@ -20,7 +25,43 @@ namespace ConsoleFile
 
             QuartoExemplo(); //vamos usar o StreamWrite
 
+            QuintoExemplo(); // directory e directoryInfo
+
         }
+
+        private static void QuintoExemplo()
+        {
+            string path = @"d:\temp";
+
+            try
+            {
+                //obs: aqui podemos utilizar a palavra var - o c# já faz a inferencia de tipos.
+                //IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+                var folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("FOLDERS: ");
+                foreach (string folder in folders)
+                {
+                    Console.WriteLine(folder);
+                }
+
+                //localizamos arquivos de um diretorio atual (SearchOption.TopDirectoryOnly -é o que define este tipo de busca)
+                var files = Directory.EnumerateFiles(path, "*.*", SearchOption.TopDirectoryOnly);
+                Console.WriteLine("FOLDERS: ");
+                foreach (string file in files)
+                {
+                    Console.WriteLine(file);
+                }
+
+                //criar um novo diretório
+                Directory.CreateDirectory(path + @"\newfolder");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
         private static void QuartoExemplo()
         {

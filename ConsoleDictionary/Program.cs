@@ -1,11 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ConsoleDictionary
 {
     class Program
     {
+
         static void Main(string[] args)
+        {
+            PrimeiroExemplo(); //criamos chaves e adicionamos valores, excluimos chave, procuramos chave
+
+
+        }
+
+
+        private static void PrimeiroExemplo()
         {
             Dictionary<string, string> cookies = new Dictionary<string, string>();
 
@@ -43,7 +53,6 @@ namespace ConsoleDictionary
             {
                 Console.WriteLine(item.Key + ": " + item.Value);
             }
-
         }
     }
 }
