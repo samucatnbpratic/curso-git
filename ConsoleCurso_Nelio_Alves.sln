@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDictionary", "Consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExercVotacao", "ConsoleExercVotacao\ConsoleExercVotacao.csproj", "{0817E3A2-620B-42DF-8418-863198DA135C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExtensionMethods", "ConsoleExtensionMethods\ConsoleExtensionMethods.csproj", "{0865A6AB-123A-45AF-8D04-EE59F7C1716C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExtensionMethods", "ConsoleExtensionMethods\ConsoleExtensionMethods.csproj", "{0865A6AB-123A-45AF-8D04-EE59F7C1716C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFile", "ConsoleFile\ConsoleFile.csproj", "{F7206160-0BF7-4F22-AD3A-091FED856ABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleFile", "ConsoleFile\ConsoleFile.csproj", "{F7206160-0BF7-4F22-AD3A-091FED856ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePath", "ConsolePath\ConsolePath.csproj", "{C0257361-8878-4690-B422-4361A99E118C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{F7206160-0BF7-4F22-AD3A-091FED856ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7206160-0BF7-4F22-AD3A-091FED856ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7206160-0BF7-4F22-AD3A-091FED856ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0257361-8878-4690-B422-4361A99E118C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0257361-8878-4690-B422-4361A99E118C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0257361-8878-4690-B422-4361A99E118C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0257361-8878-4690-B422-4361A99E118C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
