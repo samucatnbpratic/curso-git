@@ -8,12 +8,17 @@ namespace ConsoleDelegates
         //declaração de um delegate 
         //ele será referencia para uma função que recebe dois numeros double e retorna um double
         delegate double BinaryNumericOperation(double n1, double n2);
+
+        //neste delegate vamos referenciar mais de um metodo
+        //obs: neste caso não faz sentido retornar valores, o interessante é usar metodos void
+        delegate void MultiFuncs(double n1, double n2);
+
         static void Main(string[] args)
         {
             double a = 10;
             double b = 12;
 
-            BinaryNumericOperation op; 
+            BinaryNumericOperation op;
             
 
             double result = 0;
@@ -34,6 +39,14 @@ namespace ConsoleDelegates
             result = CalculationService.Square(a);
             Console.WriteLine("SQUARE: " + result);
             //OBS: aqui não podemos usar o delegate porque numero de parametros da função Square é diferente.
+
+            Console.WriteLine("\n\nDELEGATE MULTI METODOS\nOBSERVE QUE ELE EXECUTA E MOSTRA RESULTADO\n");
+            //referenciando nosso delegate a dois metodos
+            MultiFuncs mf = CalculationService.ShowSum;
+            mf += CalculationService.ShowMax;
+            mf(a, b);
+
+
         }
     }
 }
