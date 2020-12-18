@@ -16,9 +16,9 @@ namespace ConsoleDelegateAction
 
             //vamos agora utilizar expressao lambda
             //obs: como é void  utilizamos as chaves para determinar o inicio e fim do corpo
-            Action<Product> act = p => { p.Price += p.Price * 0.1; };
+            //Action<Product> act = p => { p.Price += p.Price * 0.1; };
 
-            list.ForEach(act);
+            list.ForEach(p => { p.Price += p.Price * 0.1; });
 
             foreach (Product p in list)
             {
