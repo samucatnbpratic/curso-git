@@ -14,7 +14,9 @@ namespace ConsoleDelegateAction
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
-            list.ForEach(UdpatePrice);
+            Action<Product> act = UdpatePrice;
+
+            list.ForEach(act);
 
             foreach (Product p in list)
             {
