@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using System.Collections.Generic;
 using ConsolePredicate.Entities;
 
@@ -15,11 +15,18 @@ namespace ConsolePredicate
             list.Add(new Product("HD Case", 80.90));
 
             //RemoveAll recebe um Predicate - que é um delegate que recebe um objeto e devolve um booleano
-            list.RemoveAll(p => p.Price >= 100.0);
+            list.RemoveAll(ProductTest); //obedece os criterios da função para excluir
             foreach (Product p in list)
             {
-                System.Console.WriteLine(p);
+                Console.WriteLine(p);
             }
         }
+
+        //criamos uma função e estamos passando como parametro do metodo RemoveAll do nosso list 
+        public static bool ProductTest(Product P)
+        {
+            return P.Price >= 100.0;
+        }
+
     }
 }
