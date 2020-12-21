@@ -61,6 +61,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDelegateAction", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDelegateFunc", "ConsoleDelegateFunc\ConsoleDelegateFunc.csproj", "{BDF2874F-9759-428C-9631-6BFB184C2B52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLinq", "ConsoleLinq\ConsoleLinq.csproj", "{597DB16A-80F6-4676-A1DB-2A2375DBD8D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{BDF2874F-9759-428C-9631-6BFB184C2B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDF2874F-9759-428C-9631-6BFB184C2B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDF2874F-9759-428C-9631-6BFB184C2B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597DB16A-80F6-4676-A1DB-2A2375DBD8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597DB16A-80F6-4676-A1DB-2A2375DBD8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597DB16A-80F6-4676-A1DB-2A2375DBD8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597DB16A-80F6-4676-A1DB-2A2375DBD8D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

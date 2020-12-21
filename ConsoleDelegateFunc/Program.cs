@@ -28,7 +28,7 @@ namespace ConsoleFunc
                 Console.WriteLine(s);
             }
         }
-        /*
+        /*git add
         static string NameUpper(Product p)
         {
             return p.Name.ToUpper();
