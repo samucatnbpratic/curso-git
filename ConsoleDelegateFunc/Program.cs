@@ -20,8 +20,8 @@ namespace ConsoleFunc
 
             //Func<Product, string> func = NameUpper; //assinando meu delegate referenciando a função NameUpper
             //vamos usar expressão lambda para referenciar 
-            Func<Product, string> func = p1 => p1.Name.ToUpper();
-            List<string> result = list.Select(func).ToList();
+            //Func<Product, string> func = p1 => p1.Name.ToUpper();
+            List<string> result = list.Select(p1 => p1.Name.ToUpper()).ToList();
 
             foreach (string s in result)
             {
