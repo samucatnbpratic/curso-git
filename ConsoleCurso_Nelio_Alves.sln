@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLinq", "ConsoleLinq\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLinqExercResolvido", "ConsoleLinqExercResolvido\ConsoleLinqExercResolvido.csproj", "{2C0F0005-1CF1-4A05-BC98-467D4CF92430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLinqExercFixacao", "ConsoleLinqExercFixacao\ConsoleLinqExercFixacao.csproj", "{2AB855F2-9AB9-4C19-9ADD-71A059129D36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{2C0F0005-1CF1-4A05-BC98-467D4CF92430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0F0005-1CF1-4A05-BC98-467D4CF92430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0F0005-1CF1-4A05-BC98-467D4CF92430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB855F2-9AB9-4C19-9ADD-71A059129D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB855F2-9AB9-4C19-9ADD-71A059129D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB855F2-9AB9-4C19-9ADD-71A059129D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB855F2-9AB9-4C19-9ADD-71A059129D36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
