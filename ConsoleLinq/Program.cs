@@ -74,6 +74,50 @@ namespace ConsoleLinq
 
             var r9 = produtcts.Where(p => p.Id == 30).SingleOrDefault();
             Console.WriteLine("Single or default teste2: " + r9);
+
+            //Max() -  para usar sem passar parametros sua classe Product deve implementar o IComparable, caso contrario dará erro
+            var r10 = produtcts.Max(p => p.Price); //definimos qual o campo deverá ser comparado
+            Console.WriteLine("Max Price: " + r10);
+
+            var r11 = produtcts.Min(p => p.Price); //definimos qual o campo deverá ser comparado
+            Console.WriteLine("Min Price: " + r11);
+
+            var r12 = produtcts.Where(p => p.Category.Id == 1).Sum(p => p.Price);
+            Console.WriteLine("Category 1 Sum prices: " + r12);
+
+            var r13 = produtcts.Where(p => p.Category.Id == 1).Average(p => p.Price);
+            Console.WriteLine("Category 1 Average prices: " + r13);
+
+            //tratando uma possível excessão caso nao retorne nada
+            //primeiro usamos Select e selecionamos o campo para calcular a media
+            //segundo fazemos uma verificação com DefaultIfEmpty(0) onde devolve zero se não encontrar nada
+            //terceiro pegamos a média e não precisamos passar nenhuma expressão pq já temos o campo Price.
+            var r14 = produtcts.Where(p => p.Category.Id == 5).Select(p => p.Price).DefaultIfEmpty(0).Average();
+            Console.WriteLine("Category 5 Average prices: " + r14);
+
+            //faremos nossa propria operação personalizada (0.0 defini um valor inicial para conta)
+            var r15 = produtcts.Where(p => p.Category.Id == 1).Select(p => p.Price).Aggregate(0.0, (x, y) => x + y);
+            Console.WriteLine("Category 1 Agregate(Sum prices): " + r15);
+
+            var r16 = produtcts.GroupBy(p => p.Category);
+            foreach (var cat in r16)
+            {
+                Console.WriteLine("\nCategory " + cat.Key.Name + ":\n");
+                foreach (var item in cat)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            //outra forma de fazer o foreach
+            foreach (IGrouping<Category,Product> cat in r16)
+            {
+                Console.WriteLine("\nCategory " + cat.Key.Name + ":\n");
+                foreach (Product item in cat)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+
         }
 
         static void Aula226()
